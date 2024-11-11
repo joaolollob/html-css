@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+            
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <caption>
+            Filmes da Galera
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="2" scope="row">Total</th>
+                <td colspan="3">1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulher</th>
+                <td>Ana</td>
+                <td>A Viagem de Chihiro</td>
+                <td>Castelo no Céu</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>O Menino do Pijama Listrado</td>
+                <td>Sempre a seu Lado</td>
+                <td>A Culpa é das Estrelas</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>As Branquelas</td>
+                <td>Exorcista</td>
+                <td>De Repente 30</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homem</th>
+                <td>Ricardo</td>
+                <td>Warriors</td>
+                <td>Predador</td>
+                <td>Rambo</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>Senhor dos Anéis</td>
+                <td>Blade Runner</td>
+                <td>Star Wars</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Alien</td>
+                <td>Taxi Driver</td>
+                <td>Poderoso Chefão</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
