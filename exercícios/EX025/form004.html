@@ -23,7 +23,7 @@
             </p>
         </fieldset>
         <fieldset>
-            <legend>Cor</legend>
+            <legend>Cor Favorita</legend>
             <p>
                 <label for="icor">Cor:</label>
                 <input type="color" name="cor" id="icor">
@@ -47,6 +47,41 @@
                 <input type="checkbox" name="cod" id="icod"> <label for="icod">Call of Duty</label> <br>
                 <input type="checkbox" name="ow" id="iow"> <label for="iow">Overwatch</label>
         </fieldset>
+        <p>
+            <label for="iest">Gênero Favorito:</label>
+            <select name="estilo" id="iest">
+                <option value="" selected>---| Escolha |---</option>
+                <optgroup label="Mais Escolhidos">
+                    <option value="fps">FPS</option>
+                    <option value="rpg">RPG</option>
+                    <option value="moba">MOBA</option>
+                </optgroup>
+
+                <optgroup label="Menos Escolhidos">
+                    <option value="rts">RTS</option>
+                    <option value="plat">Plataforma</option>
+                    <option value="sim">Simulador</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="ipers">Personagem Favorito</label>
+            <input type="text" name="pers" id="ipers" list="lstpers">
+            <datalist id="lstpers">
+                <option>Master Chief</option>
+                <option>Crash</option>
+                <option>Kratos</option>
+                <option>Mario</option>
+                <option>Link</option>
+                <option>Lara Croft</option>
+                <option>Isaac Clarke</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Comentario:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <!--Colocar metodo post para não limitar os caracteres-->
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
