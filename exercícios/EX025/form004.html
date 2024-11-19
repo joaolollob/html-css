@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+                <input type="radio" name="sexo" id="isxmas" value="F"> <label for="isxfem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Foto de Perfil</legend>
+            <p>
+                <label for="ifoto">Cor:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Cor</legend>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Satisfação</legend>
+            <p>
+                <label for="inivel">Nivel de satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="0">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Jogos Favoritos</legend>
+                <input type="checkbox" name="skyrim" id="iskyrim"> <label for="iskyrim">Skyrim</label> <br>
+                <input type="checkbox" name="massef" id="imassef"> <label for="imassef">Mass Effect</label> <br>
+                <input type="checkbox" name="halo" id="ihalo"> <label for="ihalo">Halo</label> <br>
+                <input type="checkbox" name="ds" id="ids"> <label for="ids">Dark Souls</label> <br>
+                <input type="checkbox" name="gow" id="igow"> <label for="igow">God of War</label> <br>
+                <input type="checkbox" name="bg" id="ibg"> <label for="ibg">Baldur's Gate</label> <br>
+                <input type="checkbox" name="cod" id="icod"> <label for="icod">Call of Duty</label> <br>
+                <input type="checkbox" name="ow" id="iow"> <label for="iow">Overwatch</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
