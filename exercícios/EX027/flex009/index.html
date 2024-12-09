@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        div.container {
+            background-color: antiquewhite;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A Outro conteúdo</div>
+        <div class="item">B</div>
+        <div class="item">C Conteúdo um pouco maior.</div>
+        <div class="item">D</div>
+        <div class="item">E Conteúdo maior maior ainda que vai ocupar mais espaço.</div>
+        <div class="item">F</div>
+        <div class="item">G Mais conteúdo ainda pra ficar com mais coisa e pra ficar maior do que qualquer um dos blocos</div>
+    </div>
+</body>
+</html>
